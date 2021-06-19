@@ -1,12 +1,7 @@
 # %%
-alpha=input()
 croatia=['c=','c-','dz=','d-','lj','nj','s=','z=']
+word = input()
 
-sum=0
-for i in croatia:
-    if alpha.count(i) >= 1:
-        sum+=alpha.count(i) 
-        alpha=alpha.replace(i,'')
-print(alpha)
-print(sum+len(alpha))
-# %%
+for i in croatia :
+    word = word.replace(i, '*')  # 절대 ''으로만 하지 말기 
+print(len(word))
